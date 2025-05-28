@@ -115,7 +115,7 @@ export function CartButton() {
 
               <Separator />
 
-              <div className="space-y-4">
+              <div className="space-y-4 p-4">
                 <div className="flex justify-between text-lg font-semibold">
                   <span>Total:</span>
                   <span>${totalPrice.toFixed(2)}</span>
@@ -123,7 +123,7 @@ export function CartButton() {
 
                 <div className="space-y-2">
                   <Button className="w-full" size="lg">
-                    Proceder al Checkout
+                    Confirmar pedido
                   </Button>
                   <Button variant="outline" className="w-full" onClick={handleClearCart}>
                     Vaciar Carrito
