@@ -50,14 +50,7 @@ export function ProductCard({ product }: ProductCardProps) {
           height={200}
           className="w-full h-48 object-cover"
         />
-        <Badge variant={product.inStock ? "default" : "secondary"} className="absolute top-2 right-2">
-          {product.inStock ? "En Stock" : "Agotado"}
-        </Badge>
-        {quantity > 0 && (
-          <Badge variant="destructive" className="absolute top-2 left-2">
-            En carrito: {quantity}
-          </Badge>
-        )}
+       
       </div>
 
       <CardHeader>
