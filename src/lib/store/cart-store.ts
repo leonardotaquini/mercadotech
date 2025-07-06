@@ -4,11 +4,11 @@ import { persist } from "zustand/middleware"
 interface Product {
   id: number
   name: string
-  description: string
   price: number
-  image: string
-  category: string
-  inStock: boolean
+  description?: string
+  image?: string
+  category?: string
+  inStock?: boolean
 }
 
 interface CartItem extends Product {
