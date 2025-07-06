@@ -17,7 +17,7 @@ const roboto = Roboto({
 
 
 export const metadata: Metadata = {
-  title: "Mercado Tech",
+  title: "GA Alberdi",
   description: "Tienda de tecnologia al mejor precio.",
 };
 

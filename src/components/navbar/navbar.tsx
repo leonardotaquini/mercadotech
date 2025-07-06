@@ -18,19 +18,13 @@ export function Navbar() {
         {/* Logo */}
         <div className="flex items-center gap-6">
           <Link href="/" className="flex items-center jusfity-center gap-2 font-semibold ">
-            <span className="text-lg ">Mercado Tech</span>
-            <Nfc className="h-6 w-6 text-primary animate-pulse" />
+            <span className="font-semibold leading-relaxed text-xl ">GA Alberdi</span>
           </Link>
         </div>
-
+ 
         {/* Navegación desktop */}
         <div className="hidden md:flex md:items-center md:gap-6">
-          <Link href="/contact" className="text-sm font-medium transition-colors hover:text-primary">
-            Contacto
-          </Link>
-          <Link href="/about" className="text-sm font-medium transition-colors hover:text-primary">
-            Acerca de nosotros
-          </Link>
+          
           <CartButton/>
           <div className="flex items-center gap-2">
            

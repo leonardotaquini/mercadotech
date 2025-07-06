@@ -8,7 +8,7 @@ import { ShoppingCart, Plus, Minus, Trash2 } from "lucide-react"
 import Image from "next/image"
 import { useCartStore } from "@/lib/store/cart-store"
 import { toast } from "sonner"
-
+import { FaCartShopping } from "react-icons/fa6";
 export function CartButton() {
   const { items, totalItems, totalPrice, updateQuantity, removeItem, clearCart } = useCartStore()
 
@@ -38,8 +38,8 @@ export function CartButton() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="ghost" className="relative">
-          <ShoppingCart className="w-4 h-4" />
+        <Button variant="ghost" className="relative text-primary hover:animate-pulse">
+          <FaCartShopping className="size-5" />
           {totalItems > 0 && (
             <Badge
               variant="destructive"
