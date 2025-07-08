@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge"
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { Separator } from "@/components/ui/separator"
 import { ShoppingCart, Plus, Minus, Trash2 } from "lucide-react"
-import Image from "next/image"
 import { useCartStore } from "@/lib/store/cart-store"
 import { toast } from "sonner"
 
@@ -72,13 +71,7 @@ export function CartDrawer() {
               <div className="space-y-4 max-h-96 overflow-y-auto">
                 {items.map((item) => (
                   <div key={item.id} className="flex items-center space-x-4 p-4 border rounded-lg ">
-                    <Image
-                      src={item.image || "/placeholder.svg"}
-                      alt={item.name}
-                      width={60}
-                      height={60}
-                      className="rounded-md object-cover"
-                    />
+                    
                     <div className="flex-1 min-w-0">
                       <h4 className="text-sm font-medium truncate">{item.name}</h4>
                       <p className="text-sm text-gray-500">${item.price.toFixed(2)}</p>

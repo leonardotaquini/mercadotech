@@ -71,13 +71,7 @@ export function CartButton() {
               <div className="space-y-4 max-h-96 overflow-y-auto">
                 {items.map((item) => (
                   <div key={item.id} className="flex items-center space-x-4 p-4 border rounded-lg">
-                    <Image
-                      src={item.image || "/placeholder.svg"}
-                      alt={item.name}
-                      width={60}
-                      height={60}
-                      className="rounded-md object-cover"
-                    />
+
                     <div className="flex-1 min-w-0">
                       <h4 className="text-sm font-medium truncate">{item.name}</h4>
                       <p className="text-sm">${item.price.toFixed(2)}</p>
